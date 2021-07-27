@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space War</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titan+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>SPACE WAR</header>
+        <div id="data">
+            <div id="sec">Time: 00</div>
+            <div id="score">Score: 00</div>
+            <div id="highscore">HighScore: </div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div id="overlay">
+            <h2>GAME OVER!</h2>
+            <h4 id='urscore'>Score: </h4>
+            <h4 id="highsc">HighScore: </h4>
+            <button class="again" onclick="location.assign('index.html')">Play Again!</button>
+        </div>
+        <!-- SOUND EFFECTS -->
+        <audio id="gameover">
+            <source src="sound/gameover.wav" type="audio/wav">
+        </audio>
+        <audio id="bonus">
+            <source src="sound/bonus.mp3" type="audio/mp3">
+        </audio>
+    </body>
+    <script src="script.js"></script>
+</html>
